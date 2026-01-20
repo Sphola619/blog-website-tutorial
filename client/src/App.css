@@ -2,6 +2,12 @@ body{
   color:#222;
   font-family:Arial, sans-serif;
 }
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
 main{
   padding: 10px;
   max-width: 500px;
@@ -12,6 +18,7 @@ header{
   display:flex;
   justify-content:space-between;
   margin-bottom: 50px;
+  align-items:center;
 }
 
 header a{
@@ -28,4 +35,45 @@ header.a.logo{
 header nav{
   display:flex;
   gap:15px;
+}
+
+div.post{
+  display: grid;
+  border:1px solid #ddd;
+  padding:15px;
+  margin-bottom:30px;
+  border-radius:5px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 15px;
+}
+
+div.post div.img{
+  flex:1;
+  margin-right:15px;
+}
+
+div.post div.texts h2{
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+div.post p.info{
+  margin: 0;
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.post p.info a.author{
+  text-decoration: none;
+  color: #333;
+}
+
+div.post p.summary{
+  margin: 6px 0 12px 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4rem;
 }
